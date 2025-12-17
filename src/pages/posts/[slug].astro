@@ -13,6 +13,7 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
+const { Content } = await post.render();
 ---
 
 <!doctype html>
@@ -29,7 +30,8 @@ const { post } = Astro.props;
     <main>
       <h1>{post.data.title}</h1>
       <article>
-        <post.Content />
+        <!-- ★ ここを変更 -->
+        <Content />
       </article>
     </main>
 
