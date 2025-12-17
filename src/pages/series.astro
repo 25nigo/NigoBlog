@@ -1,0 +1,43 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <BaseHead
+      title="Series | NigoBlog"
+      description="NigoBlogのシリーズ一覧"
+    />
+  </head>
+  <body>
+    <Header />
+
+    <main>
+      <h1>Series</h1>
+
+      <section>
+        <h2>MOBAをわかりやすく</h2>
+        <p>
+          マクロ・立ち回り・判断基準を構造から整理するシリーズ。
+        </p>
+        <p>
+          <a href="/series/moba">
+            → MOBAシリーズの記事一覧を見る
+          </a>
+        </p>
+      </section>
+
+      <section>
+        <h2>DIYメモ</h2>
+        <p>
+          修理・自作・失敗ログ。（準備中）
+        </p>
+      </section>
+    </main>
+
+    <Footer />
+  </body>
+</html>
