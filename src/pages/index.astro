@@ -31,7 +31,7 @@ const diyPosts = posts.filter(post => post.data.series === 'diy');
         <ul>
           {mobaPosts.map((post) => (
             <li>
-              <a href={`/blog/${post.slug}/`}>{post.data.title}</a>
+             <a href={`/posts/${post.slug}/`}>{post.data.title}</a>
             </li>
           ))}
         </ul>
@@ -42,7 +42,7 @@ const diyPosts = posts.filter(post => post.data.series === 'diy');
         <ul>
           {diyPosts.map((post) => (
             <li>
-              <a href={`/blog/${post.slug}/`}>{post.data.title}</a>
+              <a href={`/posts/${post.slug}/`}>{post.data.title}</a>
             </li>
           ))}
         </ul>
